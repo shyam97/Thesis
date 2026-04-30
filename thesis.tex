@@ -1,0 +1,43 @@
+\documentclass[nativefonts]{phdThesis}
+
+
+\begin{document}
+  \frontmatter
+  \selectlanguage{dutch}
+  \input{Other/titlepages.tex}
+  
+  \selectlanguage{english}
+  
+  \input{Other/summary.tex}
+  \selectlanguage{dutch}
+  \input{Other/samenvatting.tex}
+  \selectlanguage{english}
+  
+  \tableofcontents
+  %\input{Other/nomenclature.tex}
+  \thispagestyle{empty}
+  
+  \mainmatter
+  \thumbtrue  % Turn on thumb indices.
+  \input{Chapters/chapter_1.tex}
+  \input{Chapters/chapter_2.tex}
+  \input{Chapters/chapter_3.tex}
+  \input{Chapters/chapter_4.tex}
+  \input{Chapters/chapter_5.tex}
+  \input{Chapters/chapter_6.tex}
+  \input{Chapters/chapter_7.tex}
+  \input{Chapters/conclusions.tex}
+
+  \newpage
+  \appendix
+  \crefalias{section}{appsec}
+  \input{Chapters/appendices.tex}
+  
+  \thumbfalse  % Turn off thumb indices.
+  \backmatter
+
+  \printbibliography[heading=bibintoc,title={References}]
+  \thispagestyle{empty}
+	
+  \input{Other/endpages.tex}
+\end{document}

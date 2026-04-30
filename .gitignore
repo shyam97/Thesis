@@ -1,0 +1,17 @@
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+# *.pdf
+
+# Python cache
+__pycache__/
+*.pyc
